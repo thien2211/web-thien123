@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Barcelona Và Những Người Bạn</title>
+    <style>
+        /* KHAI BÁO MÀU SẮC CHỦ ĐẠO (BLAUGRANA) */
+        :root {
+            --barca-blue: #004d98;
+            --barca-red: #a50044;
+            --highlight-color: #a50044; /* Đỏ cho chữ nổi bật */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            /* Hình nền cà khịa */
+            background-image: url(z7215891334485_0a95178031e359b54a6da6f638dff55a.jpg); 
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+        
+        /* HEADER VÀ MENU */
+        .header-top {
+            background-color: var(--barca-blue); /* Xanh Dương Đậm */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-top h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar {
+            background-color: var(--barca-red); /* Đỏ Barca */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid var(--barca-blue); 
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--barca-blue); /* Xanh Dương khi rê chuột hoặc active */
+        }
+        
+        /* KHUNG CHỨA NỘI DUNG VỚI NỀN TRẮNG */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            /* Nền Trắng Mờ để chữ dễ đọc trên hình nền */
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px; 
+            color: #333; /* Màu chữ đen */
+        }
+        
+        /* TIÊU ĐỀ VÀ PHẦN NHẤN MẠNH */
+        .welcome {
+            font-size: 22px;
+            color: var(--barca-blue); /* Màu Xanh Dương */
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .section-title {
+            color: var(--barca-blue); /* Màu Xanh Dương */
+            font-size: 18px;
+            margin-top: 25px;
+            border-left: 5px solid var(--barca-red); /* Gạch dọc màu Đỏ */
+            padding-left: 10px;
+        }
+        
+        .highlight {
+            color: var(--highlight-color); 
+            font-weight: bold;
+        }
+
+        /* FORM ĐĂNG KÝ */
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+        }
+        .subscribe-form button {
+            background-color: var(--barca-red); /* Đổi màu nút sang Đỏ Barca */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .subscribe-form button:hover {
+            background-color: var(--barca-blue); 
+        }
+        
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Nền trắng mờ */
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <h1>Barcelona Và Những Người Bạn</h1>
+        </div>
+        <nav class="navbar">
+            <a href="trangchu.html" class="active">Trang Chủ</a>
+            <a href="thongtin.html">Thông Tin Về Barcelona</a>
+            <a href="dichvu.html">Dịch Vụ</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <h2 class="welcome">Chào mừng đến với Barcelona!</h2>
+
+        <p>
+            Xin chào. Tôi là <span class="highlight">**Lê Chí Thiện**</span>. Tôi có "đam mê cháy bỏng" trong lĩnh vực <span class="highlight">**"Cà Khịa Barcelona"**</span>, tạo ra những trải nghiệm số vừa đẹp mắt vừa giải trí.
+        </p>
+
+        <h3 class="section-title">Đăng ký nhận thông báo mới từ Page Anti Barcelona</h3>
+        <div class="subscribe-form">
+            <input type="email" placeholder="Nhập Email của bạn...">
+            <button>Đăng ký ngay</button>
+        </div>
+        
+        <p>
+            Tôi tin rằng một <span class="highlight">**"Barcelona khi gặp Real Madrid"**</span> hay một <span class="highlight">**"đội bóng nào đó"**</span> sẽ thua vì <span class="highlight">**"đội hình Barcelona rất nhót"**</span> sẽ mang lại ức chế cho fan hâm mộ. Đó là lý do tôi luôn anti Barcelona.
+        </p>
+
+        <h3 class="section-title">Bố của Barcelona là Cristiano Ronaldo</h3>
+    </main>
+    
+    <footer class="footer">
+        © Lê Chí Thiện | Anti Hàng Đầu Của Barcelona.
+    </footer>
+
+</body>
+</html>

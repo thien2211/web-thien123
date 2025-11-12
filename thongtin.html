@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Về FC Barcelona</title>
+    
+    <style>
+        /* CSS Cơ Bản Tái Tạo Giao Diện Ảnh */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Nền đen */
+            color: #fff; /* Chữ trắng */
+            /* Thêm hiệu ứng Matrix như ảnh nếu cần (phức tạp hơn, cần Canvas/JS) */
+            /* Ví dụ: background-image: url('duong-dan-den-hinh-nen-matrix.jpg'); */
+        }
+
+        header {
+            background-color: #004d98; /* Màu xanh đậm Barcelona */
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #a50044; /* Màu đỏ đậm Barcelona */
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .info-box {
+            background-color: #fff; /* Nền trắng của hộp nội dung */
+            color: #333; /* Chữ đen trong hộp */
+            width: 80%;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        .info-box h1 {
+            color: #6aa84f; /* Màu xanh lá cây như trong ảnh (dùng cho tiêu đề) */
+            font-size: 24px;
+            border-bottom: 2px solid #6aa84f;
+            padding-bottom: 10px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .info-box h1 span {
+            /* Giả lập icon máy tính */
+            font-size: 1.5em;
+        }
+
+        .info-box h2 {
+            color: #004d98; /* Màu xanh Barcelona cho tiêu đề phụ */
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #a50044; /* Màu đỏ đậm Barça */
+        }
+
+        .contact-info {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        .contact-info a {
+            color: #004d98;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <ul class="navbar">
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Thông Tin Về Ngô Quang Vinh</a></li> <li><a href="#">Dịch Vụ của Ngô Quang Vinh</a></li>
+        </ul>
+    </header>
+
+    <main class="main-content">
+        <div class="info-box">
+            
+            <h1>
+                Thông Tin Câu Lạc Bộ FC Barcelona 
+                <span>&#9917;</span> </h1>
+
+            <p>
+                Xin chào, chúng tôi là <span class="highlight">**FC Barcelona**</span>.
+            </p>
+
+            <p>
+                Hiện tại chúng tôi là một trong những câu lạc bộ bóng đá hàng đầu thế giới. Đặc biệt, chúng tôi là <span class="highlight">**Hơn cả một câu lạc bộ**</span> (Més Que Un Club).
+            </p>
+
+            <h2>Liên Hệ Nhanh</h2>
+            <div class="contact-info">
+                Email: <a href="mailto:contact@fcbarcelona.com">contact@fcbarcelona.com</a>
+            </div>
+
+            <h2>Thành Tựu và Phong Cách:</h2>
+            <div style="padding-left: 20px;">
+                <ul>
+                    <li><span class="highlight">**Sắc màu:**</span> Xanh-Đỏ (Blaugrana).</li>
+                    <li><span class="highlight">**Phong cách:**</span> Lối chơi Tiki-Taka, kiểm soát bóng tối đa.</li>
+                    <li><span class="highlight">**Sân nhà:**</span> Sân vận động Spotify Camp Nou huyền thoại.</li>
+                    <li><span class="highlight">**Thành tích:**</span> 5 lần vô địch UEFA Champions League, 27 lần vô địch La Liga.</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    </body>
+</html>

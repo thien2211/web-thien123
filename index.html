@@ -3,48 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Giới Thiệu Bản Thân - [rin]</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>Tô Hoàng Anh Tú - Thiết Kế Phần Mềm Và Website</title>
+    <style>
+        /* CSS RẤT CƠ BẢN ĐỂ DỄ HÌNH DUNG */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Màu nền nhạt */
+            /* Thêm hình nền nếu cần, bạn cần có file ảnh tương ứng.
+               background-image: url('duong-dan-den-anh-nen.jpg'); 
+               background-size: cover; 
+            */
+        }
+        .header-top {
+            background-color: #6aa84f; /* Màu xanh lá cây đậm cho thanh trên cùng */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-top h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .navbar {
+            background-color: #93c47d; /* Màu xanh lá cây nhạt hơn cho thanh menu */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #54783c;
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #54783c; /* Màu khi rê chuột */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .welcome {
+            font-size: 22px;
+            color: #6aa84f;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .section-title {
+            color: #6aa84f;
+            font-size: 18px;
+            margin-top: 20px;
+            border-left: 5px solid #6aa84f;
+            padding-left: 10px;
+        }
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+        }
+        .subscribe-form button {
+            background-color: #ff6600; /* Màu cam */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+        .highlight {
+            color: #6aa84f;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
+
     <header>
-        <h1>[TÊN CỦA BẠN]</h1>
-        <nav>
-            <a href="#gioi-thieu">Giới thiệu</a>
-            <a href="#ky-nang">Kỹ năng</a>
-            <a href="#lien-he">Liên hệ</a>
+        <div class="header-top">
+            <h1>Tô Hoàng Anh Tú - Thiết Kế Phần Mềm Và Website</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#" class="active">Trang Chủ</a>
+            <a href="#">Thông Tin Cá Nhân</a>
+            <a href="#">Dịch Vụ & Dự Án</a>
         </nav>
     </header>
 
-    <main>
-        <section id="gioi-thieu">
-            <h2>👋 Xin chào, tôi là [Tên Của Bạn]</h2>
-            <div class="profile-content">
-                <img src="your-photo.jpg" alt="Ảnh của [Tên Của Bạn]" class="profile-pic">
-                <p>Tôi là một [Nghề nghiệp/Sinh viên ngành gì] với đam mê về [Lĩnh vực bạn thích]. Tôi luôn tìm kiếm cơ hội để [Mục tiêu/Ước mơ của bạn].</p>
-                <p>Kinh nghiệm: [Năm] năm trong lĩnh vực [Lĩnh vực].</p>
-            </div>
-        </section>
-
-        <section id="ky-nang">
-            <h2>🛠️ Kỹ Năng Chuyên Môn</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript (Nếu có)</li>
-                <li>[Kỹ năng chuyên ngành 1]</li>
-                <li>[Kỹ năng chuyên ngành 2]</li>
-            </ul>
-        </section>
-
-        <section id="lien-he">
-            <h2>✉️ Liên Hệ Với Tôi</h2>
-            <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-            <p>LinkedIn: <a href="[Link LinkedIn của bạn]" target="_blank">[rin]</a></p>
-            <p>GitHub: <a href="[Link GitHub của bạn]" target="_blank">[rin]</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 [rin]. Mọi quyền được bảo lưu.</p>
-    </footer>
-</body>
-</html>
+    <main

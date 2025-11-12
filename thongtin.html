@@ -1,15 +1,137 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <title>Thông Tin Về Barcelona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Về Barcelona - Page Anti</title>
     <style>
-        /* Dán toàn bộ CSS từ file gốc vào đây để giữ giao diện */
+        /* KHAI BÁO MÀU SẮC CHỦ ĐẠO (BLAUGRANA) */
+        :root {
+            --barca-blue: #004d98;
+            --barca-red: #a50044;
+            --highlight-color: #a50044; /* Đỏ cho chữ nổi bật */
+        }
+
         body {
-            /* ... (Giữ nguyên các thuộc tính CSS) ... */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            /* Hình nền cà khịa */
             background-image: url(z7215891334485_0a95178031e359b54a6da6f638dff55a.jpg); 
             background-size: cover;
+            background-attachment: fixed; 
         }
-        /* ... (Các style khác) ... */
+        
+        /* HEADER VÀ MENU */
+        .header-top {
+            background-color: var(--barca-blue); /* Xanh Dương Đậm */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-top h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .navbar {
+            background-color: var(--barca-red); /* Đỏ Barca */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid var(--barca-blue); 
+        }
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Đặt active cho tab hiện tại */
+        .navbar a:hover, .navbar a.active {
+            background-color: var(--barca-blue); 
+        }
+        
+        /* KHUNG CHỨA NỘI DUNG VỚI NỀN TRẮNG */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            /* Nền Trắng Mờ để chữ dễ đọc trên hình nền */
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px; 
+            color: #333; /* Màu chữ đen */
+        }
+        
+        /* TIÊU ĐỀ VÀ PHẦN NHẤN MẠNH */
+        .welcome {
+            font-size: 22px;
+            color: var(--barca-blue); /* Màu Xanh Dương */
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .section-title {
+            color: var(--barca-blue); /* Màu Xanh Dương */
+            font-size: 18px;
+            margin-top: 25px;
+            border-left: 5px solid var(--barca-red); /* Gạch dọc màu Đỏ */
+            padding-left: 10px;
+        }
+        
+        .highlight {
+            color: var(--highlight-color); 
+            font-weight: bold;
+        }
+
+        /* FORM ĐĂNG KÝ (Không cần thiết trên trang này nhưng giữ CSS để đồng bộ) */
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+        }
+        .subscribe-form button {
+            background-color: var(--barca-red); 
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .subscribe-form button:hover {
+            background-color: var(--barca-blue); 
+        }
+        
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Nền trắng mờ */
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +142,7 @@
         </div>
         <nav class="navbar">
             <a href="trangchu.html">Trang Chủ</a>
-            <a href="thongtin.html" class="active">Thông Tin Về Barcelona</a>
+            <a href="thong.html" class="active">Thông Tin Về Barcelona</a>
             <a href="dichvu.html">Dịch Vụ</a>
         </nav>
     </header>
@@ -30,21 +152,24 @@
         <h2 class="welcome">Thông Tin Cơ Bản Về FC Barcelona</h2>
 
         <p>
-            FC Barcelona là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Barcelona, Catalonia, Tây Ban Nha.
+            FC Barcelona là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Barcelona, Catalonia, Tây Ban Nha. Thường được biết đến với biệt danh <span class="highlight">**"Més Que Un Club"**</span> (Hơn cả một câu lạc bộ), tuy nhiên, dưới góc độ anti, biệt danh đó chỉ nên là **"Més Que Un Meme"** (Hơn cả một meme).
         </p>
 
         <h3 class="section-title">Các Dữ Liệu Quan Trọng</h3>
         <ul>
-            <li><span class="highlight">**Biệt danh:**</span> Blaugrana (Xanh-Đỏ), Culés.</li>
-            <li><span class="highlight">**Sân vận động:**</span> Spotify Camp Nou.</li>
-            <li><span class="highlight">**Chủ tịch hiện tại:**</span> Joan Laporta.</li>
-            <li><span class="highlight">**Chức vô địch La Liga gần nhất:**</span> Mùa giải 2022-2023.</li>
-            <li><span class="highlight">**Triết lý:**</span> Més Que Un Club (Hơn cả một câu lạc bộ).</li>
+            <li><span class="highlight">**Sân vận động:**</span> Spotify Camp Nou (Nơi mà các đội bóng khác thích đến chơi và ghi bàn).</li>
+            <li><span class="highlight">**Chủ tịch hiện tại:**</span> Joan Laporta (Người luôn bận rộn với các đòn bẩy kinh tế).</li>
+            <li><span class="highlight">**Triết lý:**</span> Tiki-Taka (Đường chuyền qua lại cho đến khi đối thủ cướp được bóng và phản công).</li>
+            <li><span class="highlight">**Trận thua kinh điển:**</span> 2-8 trước Bayern Munich (Năm 2020), 0-3 trước Bayern (luôn), 0-4 trước Liverpool... danh sách này khá dài.</li>
         </ul>
         
-        <h3 class="section-title">Điểm Yếu (Theo quan điểm của Anti)</h3>
+        <h3 class="section-title">Phân tích Điểm Yếu Chuyên Sâu</h3>
         <p>
-            Đội hình hiện tại <span class="highlight">**rất non kinh nghiệm**</span>, thường bị loại khỏi Champions League từ vòng bảng.
+            Đội hình hiện tại <span class="highlight">**rất non kinh nghiệm**</span> và thường phải dựa vào <span class="highlight">**những lời hứa hão huyền**</span> từ ban lãnh đạo. Khả năng phòng ngự trong các trận đấu lớn thường <span class="highlight">**"mềm như bún"**</span>, dẫn đến việc bị loại khỏi Champions League từ vòng bảng hoặc vòng loại trực tiếp đầu tiên.
+        </p>
+        
+        <p>
+            Tóm lại, thông tin về Barcelona rất thú vị, đặc biệt khi bạn là một anti-fan!
         </p>
 
     </main>
